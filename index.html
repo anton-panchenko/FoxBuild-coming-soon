@@ -5,14 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Fox Build | Coming soon</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  
-  <link rel="stylesheet" href="css/demo.css" />
-  <link rel="stylesheet" href="css/templatemo-style.css">
-  
+	<title>Fox Build | Coming soon</title>
+
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/demo.css" />
+	<link rel="stylesheet" href="css/templatemo-style.css">
+	<link rel="stylesheet" href="css/custom.css">
+
   <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
 		
 	</head>
@@ -35,16 +39,16 @@
 					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
 					<header class="mb-5"><h1>Fox Build</h1></header>
 
-					<p class="mb-2">Ведутся технические и творческие работы.</p>
+					<p class="mb-2">Ведутся технические работы.</p>
 					<p class="mb-2">Вы можете позвонить нам по номеру <a href="tel:+380960660957">+380 96 06 60 957</a></p>
-					<p class="mb-2">Или оставить свой номер.</p>
+					<p class="mb-2">Или оставьте свой номер.</p>
 					<p class="mb-5">Мы Вам обязательно перезвоним.</p>
 
-                    <form action="#" method="get" class="subscribe-form">
+                    <form action="" method="POST" class="subscribe-form">
                	    	<div class="row form-section">
 
 							<div class="col-md-7 col-sm-7 col-xs-7">
-			                      <input name="phone" type="text" class="form-control" id="contact_email" placeholder="Ваш номер..." required/>
+			                      <input name="phone" type="text" class="form-control" id="contact_phone" placeholder="Ваш номер..." required/>
 				  			</div>
 							<div class="col-md-5 col-sm-5 col-xs-5">
 								<button type="submit" class="btn btn-lg btn-outline-light">Отправить</button>
@@ -61,12 +65,21 @@
 					</div>
 				</div>	
 				<div class="footer-link">
-					<p>Copyright © 2020 anton-panchenko.com
-                    </p>
+					<p>Copyright © 2020 anton-panchenko.com</p>
 				</div>
 			</div>	
 	</body>
 
 	<script type="text/javascript" src="js/particles.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+
+<script src="https://unpkg.com/imask"></script>
+<script>
+	let element = document.getElementById('contact_phone');
+	let maskOptions = {
+		mask: '+{3}(000)000-00-00'
+	};
+	let mask = new IMask(element, maskOptions);
+</script>
+
 </html>

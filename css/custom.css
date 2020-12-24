@@ -1,0 +1,7 @@
+p {
+    font-size: calc(14px + 0.6944444444444444vw);
+}
+
+.footer-link p {
+    font-size: 12px;
+}
