@@ -40,7 +40,8 @@
 					<header class="mb-5"><h1>Fox Build</h1></header>
 
 					<p class="mb-2">Ведутся технические работы.</p>
-					<p class="mb-2">Вы можете позвонить нам по номеру <a href="tel:+380960660957">+380 96 06 60 957</a></p>
+					<p class="mb-2">Вы можете позвонить нам по номеру</p>
+					<p class="mb-2"><a href="tel:+380960660957">+380 96 06 60 957</a></p>
 					<p class="mb-2">Или оставьте свой номер.</p>
 					<p class="mb-5">Мы Вам обязательно перезвоним.</p>
 
@@ -48,7 +49,7 @@
                	    	<div class="row form-section">
 
 							<div class="col-md-7 col-sm-7 col-xs-7">
-			                      <input name="phone" type="text" class="form-control" id="contact_phone" placeholder="Ваш номер..." required/>
+			                      <input name="phone" type="text" class="form-control" id="contact_phone" placeholder="+38(___)-___-__-__" required/>
 				  			</div>
 							<div class="col-md-5 col-sm-5 col-xs-5">
 								<button type="submit" class="btn btn-lg btn-outline-light">Отправить</button>
@@ -77,7 +78,7 @@
 <script>
 	let element = document.getElementById('contact_phone');
 	let maskOptions = {
-		mask: '+{3}(000)000-00-00'
+		mask: '+{38}(000)-000-00-00'
 	};
 	let mask = new IMask(element, maskOptions);
 </script>
