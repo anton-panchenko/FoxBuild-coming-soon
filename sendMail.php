@@ -1,6 +1,6 @@
 <?php
 
-$to = "info@anton-panchenko.com";
+$to = "fox.build.company@gmail.com";
 $email = 'example@example.com';
 $subject = 'Лід з тимчасового сайту';
 
