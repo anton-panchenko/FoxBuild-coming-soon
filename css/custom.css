@@ -6,8 +6,10 @@ p {
     font-size: 12px;
 }
 
-.tm-social-icons-container {
-    position: fixed;
-    top: 20px;
-    left: 15px;
+@media screen and (max-width: 576px) {
+    .tm-social-icons-container {
+        position: fixed;
+        top: 20px;
+        left: 15px;
+    }
 }
